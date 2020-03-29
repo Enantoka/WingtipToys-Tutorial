@@ -4,7 +4,7 @@
         <div>
             <h2><%: Page.Title %></h2>
 
-            <asp:ListView ID="productList" runat="server" DataKeyNames="ProductID" GroupItemCount="4" ItemType="WingTipToys.Models.Product" SelectMethod="GetProducts">
+            <asp:ListView ID="productList" runat="server" DataKeyNames="ProductID" GroupItemCount="4" ItemType="WingtipToys.Models.Product" SelectMethod="GetProducts">
                 <EmptyDataTemplate>
                     <table>
                         <tr>
@@ -26,7 +26,7 @@
                             <tr>
                                 <td>
                                     <a href="ProductDetails.aspx?productID=<%#: Item.ProductID %>">
-                                        <img src="Catalog/Images/Thumbs/<%#: Item.ImagePath %>" width="100" height="75" style="border:solid"/>
+                                        <img src="/Catalog/Images/Thumbs/<%#:Item.ImagePath%>" width="100" height="75" style="border: solid" />
                                     </a>
                                 </td>
                             </tr>
@@ -55,7 +55,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <table id="groupPlaceholderContainer" runat="server" style="width=100%">
+                                    <table id="groupPlaceholderContainer" runat="server" style="width:100%">
                                         <tr id="groupPlaceholder"></tr>
                                     </table>
                                 </td>

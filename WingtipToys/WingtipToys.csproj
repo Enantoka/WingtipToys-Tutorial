@@ -166,6 +166,25 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Catalog\Images\Thumbs\boatbig.png" />
+    <Content Include="Catalog\Images\Thumbs\boatpaper.png" />
+    <Content Include="Catalog\Images\Thumbs\boatsail.png" />
+    <Content Include="Catalog\Images\Thumbs\busdouble.png" />
+    <Content Include="Catalog\Images\Thumbs\busgreen.png" />
+    <Content Include="Catalog\Images\Thumbs\busred.png" />
+    <Content Include="Catalog\Images\Thumbs\carconvert.png" />
+    <Content Include="Catalog\Images\Thumbs\carearly.png" />
+    <Content Include="Catalog\Images\Thumbs\carfast.png" />
+    <Content Include="Catalog\Images\Thumbs\carfaster.png" />
+    <Content Include="Catalog\Images\Thumbs\carracer.png" />
+    <Content Include="Catalog\Images\Thumbs\planeace.png" />
+    <Content Include="Catalog\Images\Thumbs\planeglider.png" />
+    <Content Include="Catalog\Images\Thumbs\planepaper.png" />
+    <Content Include="Catalog\Images\Thumbs\planeprop.png" />
+    <Content Include="Catalog\Images\Thumbs\rocket.png" />
+    <Content Include="Catalog\Images\Thumbs\truckbig.png" />
+    <Content Include="Catalog\Images\Thumbs\truckearly.png" />
+    <Content Include="Catalog\Images\Thumbs\truckfire.png" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-original.css" />
     <Content Include="Content\bootstrap-original.min.css" />
@@ -404,7 +423,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Catalog\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
