@@ -8,7 +8,7 @@
         <Columns>
             <asp:BoundField DataField="ProductID" HeaderText="ID" SortExpression="ProductID" />
             <asp:BoundField DataField="Product.ProductName" HeaderText="Name" />
-            <asp:BoundField DataField="Product.UnitPrice" HeaderText="Price (each)" DataFormatString="(0:c)"/>
+            <asp:BoundField DataField="Product.UnitPrice" HeaderText="Price (each)" DataFormatString="{0:c}"/>
             <asp:TemplateField HeaderText="Quantity">
                 <ItemTemplate>
                     <asp:TextBox ID="PurchaseQuantity" Width="40" runat="server" Text="<%#: Item.Quantity %>"></asp:TextBox>
