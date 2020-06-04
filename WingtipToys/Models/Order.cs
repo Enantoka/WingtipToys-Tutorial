@@ -57,11 +57,11 @@ namespace WingtipToys.Models
         public decimal Total { get; set; }
 
         [ScaffoldColumn(false)]
-        public string PaymentTrasactionId { get; set; }
+        public string PaymentTransactionId { get; set; }
 
         [ScaffoldColumn(false)]
         public bool HasBeenShipped { get; set; }
 
-        public List<OrderDetail> OrderDEtails { get; set; }
+        public List<OrderDetail> OrderDetails { get; set; }
     }
 }
