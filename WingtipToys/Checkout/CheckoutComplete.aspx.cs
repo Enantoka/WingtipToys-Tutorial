@@ -37,14 +37,14 @@ namespace WingtipToys.Checkout
                 if (ret)
                 {
                     // Retrieve PayPal confirmation value
-                    string PaymentConfirmation = decoder["PAYMENTINFO_0_TRANSATIONID"].ToString();
+                    string PaymentConfirmation = decoder["PAYMENTINFO_0_TRANSACTIONID"].ToString();
                     TransactionId.Text = PaymentConfirmation;
 
                     ProductContext _db = new ProductContext();
 
                     // Get the current order id
                     int currentOrderId = -1;
-                    if ((string) Session["currentOrderId"] != string.Empty)
+                    if (Session["currentOrderId"] != null)
                     {
                         currentOrderId = Convert.ToInt32(Session["currentOrderID"]);
                     }

@@ -17,18 +17,18 @@
                 <ItemTemplate>
                     <h3>Shipping Address:</h3>
                     <br />
-                    <asp:Label ID="FirstName" runat="server" Text="<%#: Eval("FirstName") %>"></asp:Label>
-                    <asp:Label ID="LastName" runat="server" Text="<%#: Eval("LastName") %>"></asp:Label>
+                    <asp:Label ID="FirstName" runat="server" Text='<%#: Eval("FirstName") %>'></asp:Label>
+                    <asp:Label ID="LastName" runat="server" Text='<%#: Eval("LastName") %>'></asp:Label>
                     <br />
-                    <asp:Label ID="Address" runat="server" Text="<%#: Eval("Address") %>"></asp:Label>
+                    <asp:Label ID="Address" runat="server" Text='<%#: Eval("Address") %>'></asp:Label>
                     <br />
-                    <asp:Label ID="City" runat="server" Text="<%#: Eval("City") %>"></asp:Label>
-                    <asp:Label ID="State" runat="server" Text="<%#: Eval("State") %>"></asp:Label>
-                    <asp:Label ID="PostalCode" runat="server" Text="<%#: Eval("PostcalCode") %>"></asp:Label>
+                    <asp:Label ID="City" runat="server" Text='<%#: Eval("City") %>'></asp:Label>
+                    <asp:Label ID="State" runat="server" Text='<%#: Eval("State") %>'></asp:Label>
+                    <asp:Label ID="PostalCode" runat="server" Text='<%#: Eval("PostalCode") %>'></asp:Label>
                     <p></p>
                     <h3>Order Total:</h3>
                     <br />
-                     <asp:Label ID="Total" runat="server" Text="<%#: Eval("Total", "{0:c}") %>"></asp:Label>
+                     <asp:Label ID="Total" runat="server" Text='<%#: Eval("Total", "{0:c}") %>'></asp:Label>
                 </ItemTemplate>
                 <ItemStyle HorizontalAlign="Left" />
             </asp:TemplateField>

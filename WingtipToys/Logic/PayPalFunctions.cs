@@ -53,7 +53,7 @@ namespace WingtipToys.Logic
                 host = host_SB;
             }
 
-            string returnURL = "http://localhost:44394/Checkout/CheckoutReview.aspx";
+            string returnURL = "https://localhost:44394/Checkout/CheckoutReview.aspx";
             string cancelURL = "https://localhost:44394/Checkout/CheckoutCancel.aspx";
 
             NVPCodec encoder = new NVPCodec();
@@ -73,9 +73,9 @@ namespace WingtipToys.Logic
 
                 for (int i = 0; i < myOrderList.Count; i++)
                 {
-                    encoder["L_PAYMENTREQUEST_0_NAME"] = myOrderList[i].Product.ProductName.ToString();
-                    encoder["L_PAYMENTREQUEST_0_AMT"] = myOrderList[i].Product.UnitPrice.ToString();
-                    encoder["L_PAYMENTREQUEST_0_QTY"] = myOrderList[i].Quantity.ToString();
+                    encoder["L_PAYMENTREQUEST_0_NAME" + i] = myOrderList[i].Product.ProductName.ToString();
+                    encoder["L_PAYMENTREQUEST_0_AMT" + i] = myOrderList[i].Product.UnitPrice.ToString();
+                    encoder["L_PAYMENTREQUEST_0_QTY" + i] = myOrderList[i].Quantity.ToString();
                 }
             }
 

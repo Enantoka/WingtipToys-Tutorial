@@ -88,7 +88,7 @@ namespace WingtipToys.Checkout
                         Session["currentOrderId"] = myOrder.OrderId;
 
                         // Display Order Information
-                        List<Order> orderList =  new List<Order>)();
+                        List<Order> orderList =  new List<Order>();
                         orderList.Add(myOrder);
                         ShipInfo.DataSource = orderList;
                         ShipInfo.DataBind();

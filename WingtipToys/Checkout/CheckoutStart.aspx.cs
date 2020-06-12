@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using WingtipToys.Logic;
 
 namespace WingtipToys.Checkout
 {
@@ -11,7 +12,7 @@ namespace WingtipToys.Checkout
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Logic.NVPAPICaller payPalCaller = new Logic.NVPAPICaller();
+            NVPAPICaller payPalCaller = new NVPAPICaller();
             string retMsg = "";
             string token = "";
 

@@ -3,7 +3,7 @@
     <h1>Checkout Complete</h1>
     <p></p>
     <h3>Payment Transaction ID:</h3>
-    <asp:Label ID=" TransactionId" runat="server"></asp:Label>
+    <asp:Label ID="TransactionId" runat="server"></asp:Label>
     <p></p>
     <h3>Thank You!</h3>
     <hr />
