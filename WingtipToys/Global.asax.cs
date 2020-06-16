@@ -7,6 +7,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
+using WingtipToys.Logic;
 using WingtipToys.Models;
 
 namespace WingtipToys
@@ -21,6 +22,10 @@ namespace WingtipToys
 
             // Initialize the product database 
             Database.SetInitializer(new ProductDatabaseInitializer());
+
+            // Create the adminstrator role and user
+            RoleActions roleActions = new RoleActions();
+            roleActions.createAdmin();
         }
     }
 }
