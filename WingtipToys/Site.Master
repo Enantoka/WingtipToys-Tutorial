@@ -88,7 +88,6 @@
                         <!-- Before custom url routing: 
                             <a href="/ProductList.aspx?id=< %#: Item.CategoryID %>">< %#: Item.CategoryName %></a>
                         -->
-                        <a href="/ProductList.aspx?id=<%#: Item.CategoryID %>"><%#: Item.CategoryName %></a>
                         <a href="<%#: GetRouteUrl("ProductsByCategoryRoute", new {categoryName = Item.CategoryName}) %>"><%#: Item.CategoryName %></a>
                     </b>
                 </ItemTemplate>
