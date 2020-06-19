@@ -22,8 +22,9 @@ namespace WingtipToys.Logic
                 // Add product to DB
                 _db.Products.Add(myProduct);
                 _db.SaveChanges();
-            
-            return true;
+
+                return true;
+            }
         }
     }
 }

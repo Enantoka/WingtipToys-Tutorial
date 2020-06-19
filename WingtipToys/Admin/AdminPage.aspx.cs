@@ -51,9 +51,9 @@ namespace WingtipToys.Admin
                     // Save to Images/Thumbs folder
                     ProductImage.PostedFile.SaveAs(path + "Thumbs" + ProductImage.FileName);
                 }
-                catch (Exception e)
+                catch (Exception ex)
                 {
-                    LabelAddStatus.Text = e.Message;
+                    LabelAddStatus.Text = ex.Message;
                 }
 
                 // Add product data to DB
@@ -78,7 +78,7 @@ namespace WingtipToys.Admin
             }
         }
 
-        public IQueryable GetCatagories()
+        public IQueryable GetCategories()
         {
             var _db = new WingtipToys.Models.ProductContext();
             IQueryable query = _db.Categories;

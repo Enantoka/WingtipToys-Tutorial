@@ -41,7 +41,7 @@ namespace WingtipToys.Logic
             var userMgr = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
             var appUser = new ApplicationUser()
             {
-                UserName = "Admin",
+                UserName = "Admin@live.com",
             };
             IdUserResult = userMgr.Create(appUser, "Pa$$word");
 
