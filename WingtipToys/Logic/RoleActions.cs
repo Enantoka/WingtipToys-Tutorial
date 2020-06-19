@@ -10,7 +10,7 @@ namespace WingtipToys.Logic
 {
     internal class RoleActions
     {
-        internal void createAdmin()
+        internal void CreateAdmin()
         {
             // Access the application context and create result variables
             Models.ApplicationDbContext context = new Models.ApplicationDbContext();
