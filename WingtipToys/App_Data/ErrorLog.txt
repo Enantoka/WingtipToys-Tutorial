@@ -1,0 +1,46 @@
+********** 6/22/2020 8:16:56 PM **********
+Exception Type:System.Web.HttpException
+Exception: An HTTP error occurred. Page not found. Please try again.
+Source: customErrors section - Web.config
+Strack Trace: 
+********** 6/22/2020 8:20:49 PM **********
+Exception Type:System.Exception
+Exception: The error was unhandled by application code.
+Source: customErrors section - Web.config
+Strack Trace: 
+********** 6/22/2020 8:26:42 PM **********
+Inner Exception Type: System.InvalidOperationException
+Inner Exception: An InvalidOperationException occurred in the Page_Load handler on the Default.aspx page.
+Inner Source: WingtipToys
+Inner Stack Track: 
+   at WingtipToys._Default.Page_Load(Object sender, EventArgs e) in C:\Users\Jtan\Projects\C# .Net Projects\WingtipToys\WingtipToys\Default.aspx.cs:line 14
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type:System.Web.HttpUnhandledException
+Exception: Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source: Application_Error - Global.aspx
+Strack Trace: 
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 6/22/2020 8:33:11 PM **********
+Exception Type:System.InvalidOperationException
+Exception: An InvalidOperationException occurred in the Page_Load handler on the Default.aspx page.
+Source: Page_Error - Default.aspx
+Strack Trace: 
+   at WingtipToys._Default.Page_Load(Object sender, EventArgs e) in C:\Users\Jtan\Projects\C# .Net Projects\WingtipToys\WingtipToys\Default.aspx.cs:line 14
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
