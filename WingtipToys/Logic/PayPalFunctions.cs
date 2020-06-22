@@ -188,9 +188,10 @@ namespace WingtipToys.Logic
                     myWriter.Write(strPost);
                 }
             }
-            catch (Exception)
+            catch (Exception exc)
             {
-                // Add logging for exception
+                // Log Exception Error
+                WingtipToys.Logic.ExceptionUtility.LogException(exc, "HttpCall in PayPalFunction.cs");
             }
 
             // Retrieve the Reponse returned from the NVP API call to PayPal
